@@ -1,0 +1,29 @@
+body {
+height:100%;
+background: black;
+color: #33cccc;
+margin:0px;
+border: 7px dotted orange;
+font-family: arial;
+min-width: 500px;
+
+}
+
+header {
+	background:url(http://www.planwallpaper.com/static/images/colorful-triangles-background_yB0qTG6.jpg);
+	background-size:cover;
+	height:100px;
+	width: 100%;
+	padding: 0px;
+	text-align: center;
+}
+
+#banner h1 {
+	color:white;
+}
+
+.box{
+	border: 1px solid orange;
+	margin:10px 15%;
+	width:70%;
+padding: 20px;}
