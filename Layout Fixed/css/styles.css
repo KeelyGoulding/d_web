@@ -1,0 +1,182 @@
+body{
+	font-family: gill sans, arial, sans-serif;
+	color:#3a3a4a;
+	margin: 0 0 0 0;
+	padding: 0;
+}
+
+
+h1{
+	font-family: cambria, georgia, serif;
+	font-size: 32px;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight:normal;
+}
+
+p {
+	font-size: 18px;
+}
+
+a:link {
+	text-decoration: none;
+	color: #189183;
+	font-weight: bold;
+}
+
+q {
+	font-family: cambria, georgia, sans-serif;
+	font-size: 24px;
+}
+
+
+#container {
+	width:1200px;
+	margin:auto;
+	box-shadow 0px 0px 10px #999;
+}
+
+
+header#top {
+	background: #e0ddd4;
+	padding:20px 70px;
+}
+
+header nav ul li {
+	display:inline-block;
+}
+
+header nav ul li a:link{
+	color:#3a3a4a;
+	text-transform: uppercase;
+	margin-left: 20px;
+}
+
+nav{
+	float:right;
+}
+
+nav ul {
+	list-style: none;
+	margin:0;
+	margin-bottom: 5px;
+}
+
+#banner {
+	position:relative;
+}
+
+#bannerText {
+	position:absolute;
+	bottom:-20px;
+	color:#e0ddd4;
+	
+}
+
+#bannerText h1{
+	text-transform: uppercase;
+	font-size: 60px;
+	position:relative;
+	bottom:-50px;
+}
+
+
+aside {
+	background: #e0ddd4;
+}
+
+.button {
+	text-transform:uppercase;
+	background-color: #189183;
+	padding: 10px 10px;
+}
+
+.button a {
+	color: white;
+}
+
+.imgQuote {
+	position: absolute;
+	color:#e0ddd4;
+	padding:20px;
+}
+.asideText {
+	text-align: center;
+	padding:20px;
+}
+
+.asideText p {
+	position:relative;
+	top: -15px;
+}
+
+main h2 {
+	font-weight:bold;
+}
+
+main section h2 {
+	color:	#189183;
+	}
+
+footer {
+	background: #3a3a4a;
+	color:#e0ddd4;
+	padding: 75px 0px;
+}
+
+footer ul {
+	width:320px;
+}
+
+.f_list {
+	float:left;
+	margin-right:25%;
+}
+
+.clearflt {
+	clear:both;
+}
+.wrap {
+	padding: 75px 70px;
+}
+.col_720{
+	width:720px;
+	float:left;
+	margin-right: 80px;
+}
+.col_260 {
+	width:260px;
+	float:left;
+	overflow: hidden;
+	position: relative;
+}
+
+.col_320 {
+	width:320px;
+	float:left;
+	margin-left: 50px;
+}
+
+#logo{
+float:left;
+font-weight: bold;
+margin:0px;
+}
+
+.sm {
+	display:block;
+	width:35px;
+	height:35px;
+	margin-bottom: -10px;
+}
+
+a[href$="instagram.com"] {
+	background:url(../imgs/instagram.png);
+}
+
+a[href$="twitter.com"] {
+	background:url(../imgs/twitter.png);
+}
