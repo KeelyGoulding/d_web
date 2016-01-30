@@ -1,0 +1,17 @@
+/*here we are styling the body*/
+body {
+	background: lightcyan;
+	width:800px;
+	margin:auto;
+}
+
+h1 {
+	color:maroon; /*header text color*/
+	text-align:center;
+}
+
+p {
+	color:gray; /* paragraph text color */
+	border: 1px solid gray;
+	padding: 10px;
+}
