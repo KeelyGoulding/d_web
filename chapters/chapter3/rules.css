@@ -1,0 +1,20 @@
+body {
+	background:yellow;
+}
+
+h1 {
+	color:red;
+}
+
+h2 {
+	background:green;
+}
+
+p {
+	color:yellow;
+}
+
+p.greeting {
+	color:green;
+}
+

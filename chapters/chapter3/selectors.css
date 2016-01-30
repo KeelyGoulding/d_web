@@ -1,0 +1,41 @@
+h1 {
+	background:black;
+	color:white;
+}
+
+.first {
+	color:red;
+	margin:10px;
+	padding:20px;
+}
+
+a {
+	color:cornflowerblue;
+	text-decoration:none;
+}
+
+a:visited {
+	color:tomato;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+ol {
+	border: 5px solid darksalmon;
+	border-radius: 10px;
+}
+
+ol li {
+	color: brown;
+}
+
+li:first-child {
+	background:yellow;
+}
+
+li:nth-child(2) {
+	background:orange;
+}
+
