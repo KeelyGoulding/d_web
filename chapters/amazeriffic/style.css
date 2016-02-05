@@ -3,6 +3,15 @@ body {
 	background:#f9e933;
 }
 
+.container {
+	max-width: 855px;
+	margin:auto;
+}
+
+header, main, footer {
+	min-width:855px;
+}
+
 header {
 	background:white;
 	overflow:auto;
@@ -20,13 +29,33 @@ header nav {
 
 main {
 	background:white;
+	overflow:auto;
 }
 
-header, main, footer {
-	min-width:855px;
+main h2,p,h3,ul {
+	width:570px;
+	float:left;
 }
 
-.container {
-	max-width: 855px;
-	margin:auto;
+main img {
+	float:right;
+	width: 285px;
 }
+
+footer {
+	clear:both;
+}
+
+footer .contact {
+	width:570px;
+	float:left;
+}
+
+footer .sitemap {
+	width:285px;
+	float:right;
+}
+
+
+
+
