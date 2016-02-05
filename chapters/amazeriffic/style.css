@@ -11,10 +11,20 @@ body {
 
 header, main, footer {
 	min-width:855px;
+	padding:40px;
 }
 
 h1, h2, h3, h4 {
 	font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+	color:red;
+	text-decoration:none;
+}
+
+a:hover{
+	text-decoration:underline;
 }
 
 header {
@@ -25,16 +35,22 @@ header {
 header h1 {
 	width:570px;
 	float:left;
+	font-size:xx-large;
 }
 
 header nav {
 	width:285px;
 	float:right;
+	font-size: 1em;
 }
 
 main {
 	background:white;
 	overflow:auto;
+}
+
+main h2 {
+	font-size:x-large;	
 }
 
 main h2,p,h3,ul {
