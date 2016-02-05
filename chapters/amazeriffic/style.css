@@ -5,6 +5,17 @@ body {
 
 header {
 	background:white;
+	overflow:auto;
+}
+
+header h1 {
+	width:570px;
+	float:left;
+}
+
+header nav {
+	width:285px;
+	float:right;
 }
 
 main {
