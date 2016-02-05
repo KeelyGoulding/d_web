@@ -5,6 +5,9 @@ body{
 	padding: 0;
 }
 
+img {
+	width:100%;
+}
 
 h1{
 	font-family: cambria, georgia, serif;
@@ -34,7 +37,7 @@ q {
 
 
 #container {
-	width:1200px;
+	max-width:1200px;
 	margin:auto;
 	box-shadow 0px 0px 10px #999;
 }
@@ -42,7 +45,7 @@ q {
 
 header#top {
 	background: #e0ddd4;
-	padding:20px 70px;
+	padding:20px 5.83%;
 }
 
 header nav ul li {
@@ -52,7 +55,7 @@ header nav ul li {
 header nav ul li a:link{
 	color:#3a3a4a;
 	text-transform: uppercase;
-	margin-left: 20px;
+	margin-left: 1.7%;
 }
 
 nav{
@@ -91,7 +94,7 @@ aside {
 .button {
 	text-transform:uppercase;
 	background-color: #189183;
-	padding: 10px 10px;
+	padding: 10px 4%;
 }
 
 .button a {
@@ -101,11 +104,11 @@ aside {
 .imgQuote {
 	position: absolute;
 	color:#e0ddd4;
-	padding:20px;
+	padding:7.7%;
 }
 .asideText {
 	text-align: center;
-	padding:20px;
+	padding:7.7%px;
 }
 
 .asideText p {
@@ -127,8 +130,10 @@ footer {
 	padding: 75px 0px;
 }
 
-footer ul {
-	width:320px;
+footer nav ul {
+	/*width:320px;*/
+	-webkit-columns: 50px 2;
+	columns: 50px 2;
 }
 
 .f_list {
@@ -140,24 +145,24 @@ footer ul {
 	clear:both;
 }
 .wrap {
-	padding: 75px 70px;
+	padding: 6.25vw 5.83%;
 }
 .col_720{
-	width:720px;
+	width:67.9%;
 	float:left;
-	margin-right: 80px;
+	margin-right: 7.5%;
 }
 .col_260 {
-	width:260px;
+	width:24.5%;
 	float:left;
 	overflow: hidden;
 	position: relative;
 }
 
 .col_320 {
-	width:320px;
+	width:26.6%;
 	float:left;
-	margin-left: 50px;
+	margin-left: 4.15%;
 }
 
 #logo{
@@ -179,4 +184,20 @@ a[href$="instagram.com"] {
 
 a[href$="twitter.com"] {
 	background:url(../imgs/twitter.png);
+}
+
+@media screen and (max-width:700px){
+	.col_720 {
+		float:none;
+		width:100%;
+		padding-bottom:40px;
+		border-bottom: 1px solid #333;
+		margin-bottom: 40px;
+	}
+
+	.col_260 {
+		float:none;
+		width:60%;
+		margin:auto;
+	}
 }
