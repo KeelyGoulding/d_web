@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* Species */
+
+.spec_info {
+	width: 28.5%;
+	height: 20vw;
+	border-radius: 15px;
+	border: medium solid black;
+	overflow:hidden;
+	float:left;	
+	background:rgba(128,128,128,0.70);
+	margin:0 2%;
+}
+
+.spec_info li {
+	text-align:left;
+}
+
+.spec_info h3, ul {
+	margin:1vw;
+}
+
+.spec_info h3 {
+	text-align:center;
+}
+
+.wrapper {
+	width:80%;
+	margin:auto;
+}
+
+main {
+	text-align:left;
+}
+
+main h1 {
+	text-align:center;
+}
+
+aside {
+	float: left;
+	width: 9vw;
+	margin:2vw;
+	position:absolute;
+}
+
+.spec_nav {
+	width:90%;
+	padding:5%;
+	display:block;
+}
