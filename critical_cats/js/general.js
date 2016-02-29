@@ -102,7 +102,15 @@ $("#species").mouseleave(function(){
 });
 
 //SPECIES HOVER
-$(".spec_nav")
+var show = function (){
+	$(".hover").show();
+};
+
+var hide = function () {
+	$(".hover").show();
+};
+
+$(".spec_nav").hover(show, hide);
 
 
 });

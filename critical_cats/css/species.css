@@ -45,7 +45,8 @@ aside {
 }
 
 .spec_nav {
-	width:90%;
+	width:8.1vw;
+	height: 8.1vw;
 	padding:5%;
 	display:block;
 }
@@ -55,7 +56,7 @@ aside {
 }
 
 .hover {
-	/*display:none;*/
+	display:none;
 	background-color:rgba(239,56,77,0.7);
 	font-family:Bree Serif, Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
 	color:white;
@@ -65,5 +66,7 @@ aside {
 	height:8.1vw;
 	width:100%;
 	position:relative;
-	bottom:50%;
+	top:-45vw;
+	box-sizing: border-box;
+	padding-top:30%
 }
