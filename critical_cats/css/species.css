@@ -49,3 +49,21 @@ aside {
 	padding:5%;
 	display:block;
 }
+
+.spec_nav img {
+	width:100%;
+}
+
+.hover {
+	/*display:none;*/
+	background-color:rgba(239,56,77,0.7);
+	font-family:Bree Serif, Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+	color:white;
+	font-size:1em;
+	border-radius:100%;
+	text-align:center;
+	height:8.1vw;
+	width:100%;
+	position:relative;
+	bottom:50%;
+}

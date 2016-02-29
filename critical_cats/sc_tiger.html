@@ -7,13 +7,14 @@
 <link href="css/template.css" rel="stylesheet" type="text/css">
 <link href="css/species.css" rel="stylesheet" type="text/css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="js/general.js"></script>
 </head>
 
 <header>
 <div id="logo"><img src="images/whiskers_l.svg"><h1><a href="index.html">Critically Endangered Cats</a></h1><img src="images/whiskers_r.svg"></div>
 <nav>
 	<ul>
-    	<li><a href="sc_tiger.html">Species</a>
+    	<li id="species"><a href="sc_tiger.html">Species</a>
             <ul id="dropdown">
                 <li><a href="sc_tiger.html">South China Tiger</a></li>
                 <li><a href="#">Amur Leopard</a></li>
@@ -31,11 +32,17 @@
 
 <!-- SIDE NAV -->
 <aside>
-	<img src="images/leopard-skin.svg" width="50px" class="spec_nav">
-    <img src="images/leopard-skin.svg" width="50px" class="spec_nav">
-    <img src="images/leopard-skin.svg" width="50px" class="spec_nav">
-    <img src="images/leopard-skin.svg" width="50px" class="spec_nav">
-    <img src="images/leopard-skin.svg" width="50px" class="spec_nav">
+	<div class="spec_nav"><img src="images/amur_leopard.png"></div>
+    <div class="spec_nav"><img src="images/asia_cheetah.png"></div>
+    <div class="spec_nav"><img src="images/iriomote.png"></div>
+    <div class="spec_nav"><img src="images/sc_tiger.png"></div>
+    <div class="spec_nav"><img src="images/scottish-wildcat.png"></div>
+    
+    <div class="spec_nav"><div class="hover">Amur Leopard</div></div>
+    <div class="spec_nav"><div class="hover">Asiatic Cheetah</div></div>
+    <div class="spec_nav"><div class="hover">Iriomote</div></div>
+    <div class="spec_nav"><div class="hover">South China Tiger</div></div>
+    <div class="spec_nav"><div class="hover">Scottish Wildcat</div></div>
 </aside>
 <div class="clearflt"></div>
 <!-- MAIN -->
@@ -76,8 +83,8 @@
 <ul>
 	<div class="foot_item">
         <li><a href="index.html">Home</a></li>
-        <li><a href="#">More Info</a></li>
-        <li><a href="#">Gallery</a></li>
+        <li><a href="info.html">More Info</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
     </div>
     <div class="foot_item">
         <li><a href="#">Species</a>
@@ -93,9 +100,9 @@
         <li class="bullet"><a href="#">Iriomote</a></li>
     </div>
    <div class="foot_item">
-   		<li>Questions? Concerns?</li> 
-        <li><a href="#">Contact Us!</a></li> 
-        <li>© CriticalCats 2016</li>
+        <li><a href="#">Contact Us!</a></li>
+        <li><img src="images/email.png"><img src="images/facebook.png"><img src="images/twitter.png"><img src="images/instagram.png"></li>
+        <!--<li>© CriticalCats 2016</li>-->
    </div>
 </ul>    
 </footer>

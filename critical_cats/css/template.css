@@ -103,6 +103,8 @@ nav #dropdown {
 	display:table-row;
 	left:0px;
 	text-align:center;
+	z-index:1;
+	display: none;
 }
 
 nav #dropdown li {

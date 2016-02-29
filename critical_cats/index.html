@@ -4,8 +4,9 @@
 <meta charset="utf-8">
 <link href='https://fonts.googleapis.com/css?family=Bree+Serif|Varela+Round' rel='stylesheet' type='text/css'>
 <link href="css/template.css" rel="stylesheet" type="text/css">
+<link href="css/home.css" rel="stylesheet" type="text/css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<link href="js/general.js" type="text/javascript">
+<script src="js/general.js"></script>
 <title>Critically Endangered Cats</title>
 
 </head>
@@ -16,7 +17,7 @@
 <div id="logo"><img src="images/whiskers_l.svg"><h1><a href="index.html">Critically Endangered Cats</a></h1><img src="images/whiskers_r.svg"></div>
 <nav>
 	<ul>
-    	<li><a href="sc_tiger.html">Species</a>
+    	<li id="species"><a href="sc_tiger.html">Species</a>
             <ul id="dropdown">
                 <li><a href="sc_tiger.html">South China Tiger</a></li>
                 <li><a href="#">Amur Leopard</a></li>
@@ -33,9 +34,32 @@
 <div class="clearflt"></div>
 <!-- MAIN -->
 <main>
-<div class="banner">
-	<div class="slider"><img src="images/amur_leopard.jpg"></div>
-    <div class="caption"><h1>text</h1></div>
+<!--SLIDER based on code from http://codepen.io/dfitzy/pen/xZqGVo, Respsonsive Image Slider by David Fitas-->
+<div class="slider">
+  <div class="slide_viewer">
+    <div class="slide_group">
+      <div class="slide"><img src="images/amur_leopard.jpg"><div class="caption">Amur Leopard</div>
+      </div>
+      <div class="slide"><img src="images/sc_tiger.jpg"><div class="caption">Amur Leopard</div>
+      </div>
+      <div class="slide"><img src="images/asiatic_cheetah.jpg"><div class="caption">Amur Leopard</div>
+      </div>
+      <div class="slide"><img src="images/iriomote.jpg"><div class="caption">Amur Leopard</div>
+      </div>
+    </div>
+  </div>
+</div><!-- End // .slider -->
+
+<div class="slide_buttons">
+</div>
+
+<div class="directional_nav">
+  <div class="previous_btn" title="Previous">
+	<img src="images/prev_btn.svg">
+  </div>
+  <div class="next_btn" title="Next">
+   <img src="images/next_btn.svg">
+  </div>
 </div>
 
 <h2>Welcome!</h2>
