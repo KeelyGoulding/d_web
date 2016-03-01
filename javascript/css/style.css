@@ -1,0 +1,29 @@
+body {
+	font-family: arial;
+	text-align: center;
+	margin-top:50px;
+	font-size: 18px;
+	color:purple;
+}
+
+h1 {
+	color:purple;
+}
+
+a:link, a:visited{
+	text-decoration: none;
+	display: inline-block;
+	padding: 20px;
+	color:white;
+	background-color:black;
+	transition:0.5s background-color;
+}
+
+a:hover {
+	background-color: purple;
+}
+
+#mood{
+	font-size: 78px;
+	margin:50px;
+}
