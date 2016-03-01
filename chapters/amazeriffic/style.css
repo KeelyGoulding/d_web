@@ -1,0 +1,106 @@
+
+body {
+	background:#f9e933;
+	font-family: 'Droid Sans', sans-serif;
+}
+
+.container {
+	max-width: 855px;
+	margin:auto;
+}
+
+header, main, footer {
+	min-width:855px;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+	color:red;
+	text-decoration:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+header {
+	background:white;
+	overflow:auto;
+}
+
+header h1 {
+	width:570px;
+	float:left;
+	font-size:xx-large;
+	padding: 15px 0px;
+}
+
+header nav {
+	width:285px;
+	float:right;
+	font-size: 1em;
+	padding:15px 0px;
+}
+
+main {
+	background:white;
+	overflow:auto;
+}
+
+main .container {
+	padding: 50px 0;	
+}
+
+main h2 {
+	font-size:x-large;	
+	margin:15px 0;
+}
+
+.left {
+	width:570px;
+	float:left;
+}
+
+main h3 {
+	margin:30px 0 15px 0;
+}
+
+main img {
+	float:right;
+	width: 285px;
+}
+
+footer {
+	clear:both;
+	line-height:1.5;
+}
+
+footer .contact {
+	width:570px;
+	float:left;
+	margin:30px 0;
+}
+
+footer .sitemap {
+	width:285px;
+	float:right;
+	margin:30px 0;
+}
+
+footer ul {
+	-webkit-columns:75px 2;
+	columns:75px 2;
+}
+
+footer h5 {
+	margin-bottom:10px;
+}
+
+.clear {
+	clear:both;
+}
+
+

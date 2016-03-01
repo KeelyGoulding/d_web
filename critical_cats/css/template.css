@@ -1,0 +1,158 @@
+@charset "utf-8";
+/* TEMPLATE	 */
+
+body {
+	margin:0;
+	padding:0;
+	font-family:'Varela Round', "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size:16px;
+}
+
+h1, h2, h3 {
+	color:#f9324a;
+	font-family:'Bree Serif', Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+	font-weight:normal;
+}
+
+h1 {
+	font-size:32px;
+}
+
+h2 {
+	font-size:26px;
+}
+
+h3 {
+	font-size:20px;
+}
+
+main a {
+	color:#f9324a;
+}
+
+main a:visited {
+	color: #808080;
+	text-decoration: none;
+}
+
+header{
+	position:static;
+	top:0px;
+	width:100%;
+	text-align:center;
+	height:133px;
+}
+
+#logo {
+	height:100px;
+	background-color:white;
+}
+
+header img {
+	height:100%;
+	display:inline-block;
+}
+
+header h1 {
+	display:inline-block;
+	position:relative;
+	bottom:40px;
+	text-decoration: none;
+}
+
+header #logo h1 a{
+	color: #f9324a;
+	text-decoration:none;
+}
+
+header nav {
+	background-color:black;	
+	float:left;
+	width:100%;	
+}
+
+header nav ul {
+	margin:0;
+	padding:5px 0;	
+}
+
+header nav li {
+	display:inline-block;
+	list-style:none;
+	color:white;
+	width:33%;
+	font-size:20px;
+	font-family:Bree Serif, Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+}
+
+header nav li a {
+	color:white;
+	text-decoration:none;	
+}
+
+header nav li a:hover {
+	color:#F9324A;	
+}
+nav #dropdown {
+	background: rgba(0,0,0,0.7);
+	padding:5px;
+	color:white;
+	width:33%;
+	height:200px;
+	position:absolute;
+	display:table-row;
+	left:0px;
+	text-align:center;
+	z-index:1;
+	display: none;
+}
+
+nav #dropdown li {
+	margin: 0 10%;
+}
+
+main {
+	margin:auto;
+	text-align:center;	
+	position: static;
+	top:138px;
+	max-width:72vw;
+}
+
+footer {
+	background-color: black;
+	padding: 5px 10%;
+	color:white;
+	font-size:80%;
+	margin-top: 1.5vw;
+}
+
+footer a {
+	color:white;
+	text-decoration:none;
+}
+
+footer a:hover {
+	color:#f9324a;
+}
+
+footer ul {
+	list-style:none;
+}
+
+footer li.bullet {
+	list-style:disc;
+}
+
+.foot_item {
+	display: inline-block;
+	width: 20%;
+}
+
+footer .foot_item img {
+	width:2.25vw;
+}
+
+.clearflt {
+	clear:both;	
+}

@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* MORE INFO */
+#links {
+	 width:80%;
+	 border: medium solid black;
+	 border-radius: 15px;
+	 padding:10px;
+	 text-align:left;
+	 margin:auto;
+ }
+
+.org {
+	float: left;
+	position:relative;
+	bottom:10px;
+}
+
+.nm_cats {
+	float:left;
+	width:20%;
+	margin:2.5%;
+}
+
+
