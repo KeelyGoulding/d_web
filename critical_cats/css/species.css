@@ -42,6 +42,8 @@ aside {
 	width: 9vw;
 	margin:2vw;
 	position:absolute;
+	height:50vw;
+	overflow:hidden;
 }
 
 .spec_nav {
@@ -49,6 +51,7 @@ aside {
 	height: 8.1vw;
 	padding:5%;
 	display:block;
+	position:relative;
 }
 
 .spec_nav img {
@@ -64,9 +67,10 @@ aside {
 	border-radius:100%;
 	text-align:center;
 	height:8.1vw;
-	width:100%;
-	position:relative;
-	top:-45vw;
+	width:8.1vw;
+	position:absolute;
+	top:0;
+	margin-top:5%;
+	padding:35% 0;
 	box-sizing: border-box;
-	padding-top:30%
 }

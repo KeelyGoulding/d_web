@@ -23,7 +23,6 @@
   height: 100%;
   position: absolute;
   width: 100%;
-  bottom: 20%;
 }
 
 .slide img {
@@ -33,10 +32,10 @@
 .caption {
 	background-color: rgba(239,56,77,0.7);
 	position:absolute;
-	bottom:-20%;
-	left: 98px;
-	width:79.5%;
-	padding:3px;
+	bottom:0;
+	left: 10%;
+	width:78%;
+	padding:1%;
 	margin:auto;	
 	text-align:left;
 	font-size:20px;
@@ -52,11 +51,11 @@ a.slide_btn {
   color: #808080;
   font-size: 42px;
   margin: 0 0.175em;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.75s ease-in-out;
+  -moz-transition: all 0.75s ease-in-out;
+  -ms-transition: all 0.75s ease-in-out;
+  -o-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
 }
 
 .slide_btn.active, .slide_btn:hover {
@@ -66,10 +65,13 @@ a.slide_btn {
 
 .directional_nav {
   left: 0;
-  margin: -255px auto;
+  /*margin: -255px auto;*/
   position: absolute;
+  top:50%;
   right: 0;
-  width: 55%;
+  margin:-32px auto 0 auto;
+  width: 70%;
+  z-index:1;
 }
 
 .previous_btn {
@@ -84,10 +86,10 @@ a.slide_btn {
   cursor: pointer;
   height: 65px;
   opacity: 0.6;
-  -webkit-transition: opacity 0.4s ease-in-out;
-  -moz-transition: opacity 0.4s ease-in-out;
-  -ms-transition: opacity 0.4s ease-in-out;
-  -o-transition: opacity 0.4s ease-in-out;
-  transition: opacity 0.4s ease-in-out;
+  -webkit-transition: opacity 0.75s ease-in-out;
+  -moz-transition: opacity 0.75s ease-in-out;
+  -ms-transition: opacity 0.75s ease-in-out;
+  -o-transition: opacity 0.75s ease-in-out;
+  transition: opacity 0.75s ease-in-out;
   width: 65px;
 }

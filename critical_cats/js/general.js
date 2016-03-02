@@ -101,13 +101,36 @@ $("#species").mouseleave(function(){
 	$("#dropdown").slideUp();
 });
 
+// $(function () {
+//   $("#species").mouseenter(function () {
+//     $this = $(this);
+//     $this.data("delay", setTimeout( function () {
+//         $this.next("#dropdown").slideDown();
+//       }), 500);
+//     });
+//   $("#species").mouseleave(function () {
+//      $this.next("#dropdown").slideUp();
+//    });
+//   });
+
+
+// $("#species").hoverIntent({
+//     over: function(){$("#dropdown").slideDown();},
+//     out: function(){$("#dropdown").slideUp();},
+// });
+
+
+
 //SPECIES HOVER
-var show = function (){
-	$(".hover").show();
+var show = function (e){
+  var x = "#";
+  x += e.target.id ;
+  x += " .hover";
+	$(x).show();
 };
 
 var hide = function () {
-	$(".hover").show();
+	$(".hover").hide();
 };
 
 $(".spec_nav").hover(show, hide);
