@@ -28,7 +28,7 @@
 
 .spec_info img {
 	height:100%;
-	min-width:100%;
+	width:100%;
 	-webkit-align-self: center;
     align-self: center;
 }
@@ -51,13 +51,13 @@ aside {
 	width: 9vw;
 	margin:2vw;
 	position:absolute;
-	height:50vw;
+	height:40vw;
 	overflow:hidden;
 }
 
 .spec_nav {
-	width:8.1vw;
-	height: 8.1vw;
+	width:7vw;
+	height: 7vw;
 	padding:5%;
 	display:block;
 	position:relative;
@@ -75,8 +75,8 @@ aside {
 	font-size:1em;
 	border-radius:100%;
 	text-align:center;
-	height:8.1vw;
-	width:8.1vw;
+	height:7vw;
+	width:7vw;
 	position:absolute;
 	top:0;
 	margin-top:5%;
