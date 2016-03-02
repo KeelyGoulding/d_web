@@ -28,11 +28,12 @@ h3 {
 
 main a {
 	color:#f9324a;
+	text-decoration:none;
 }
 
 main a:visited {
 	color: #808080;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 header{

@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <link href='https://fonts.googleapis.com/css?family=Bree+Serif|Varela+Round' rel='stylesheet' type='text/css'>
 <link href="css/template.css" rel="stylesheet" type="text/css">
+<link href="css/gallery.css" rel="stylesheet" type="text/css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="js/general.js"></script>
 <script src="js/hoverintent.js"></script>
@@ -20,14 +21,14 @@
     	<li id="species"><a href="sc_tiger.html">Species</a>
             <ul id="dropdown">
                 <li><a href="sc_tiger.html">South China Tiger</a></li>
-                <li><a href="#">Amur Leopard</a></li>
-                <li><a href="#">Asiatic Cheetah</a></li>
-                <li><a href="#">Scottish Wildcat</a></li>
-                <li><a href="#">Iriomote</a></li>
+                <li><a href="a_leopard.html">Amur Leopard</a></li>
+                <li><a href="a_cheetah.html">Asiatic Cheetah</a></li>
+                <li><a href="s_wildcat.html">Scottish Wildcat</a></li>
+                <li><a href="iriomote.html">Iriomote</a></li>
             </ul>
         </li>
         <li><a href="info.html">More Info</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="gallery.html"><span style="color:#f9324a">Gallery</span></a></li>
     </ul>
 </nav>
 </header>
@@ -36,8 +37,13 @@
 <!--MAIN-->
 <main>
 <h1>Gallery</h1>
-<p>Want to add your own photos to our gallery? Use the hashtag <span style="color:#f9324a">#CriticalCats</span> on Twitter, Facebook, or Instagram!</p>
+<p>Want to add your own photos to our gallery? Use the hashtag <span style="color:#f9324a">#CriticalCats</span> on Twitter or Flickr!</p>
 
+<a class="twitter-grid" href="https://twitter.com/Keely0007/timelines/704913906045739008" data-widget-id="704914540216127488" data-chrome="noheader" data-chrome="nofooter" width="100%">#CriticalCats</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<div class="photos"></div>
+<div class="clearflt"></div>
 
 </main>
 
@@ -46,26 +52,25 @@
 <ul>
 	<div class="foot_item">
         <li><a href="index.html">Home</a></li>
-        <li><a href="#">More Info</a></li>
-        <li><a href="#">Gallery</a></li>
+        <li><a href="info.html">More Info</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
     </div>
     <div class="foot_item">
-        <li><a href="#">Species</a>
+        <li>Species
             <ul>
-                <li class="bullet"><a href="#">South China Tiger</a></li>
-                <li class="bullet"><a href="#">Amur Leopard</a></li>
+                <li class="bullet"><a href="sc_tiger.html">South China Tiger</a></li>
+                <li class="bullet"><a href="a_leopard.html">Amur Leopard</a></li>
            </ul>
         </li>
     </div>
     <div class="foot_item">
-        <li class="bullet"><a href="#">Asiatic Cheetah</a></li>
-        <li class="bullet"><a href="#">Scottish Wildcat</a></li>
-        <li class="bullet"><a href="#">Iriomote</a></li>
+        <li class="bullet"><a href="a_cheetah.html">Asiatic Cheetah</a></li>
+        <li class="bullet"><a href="s_wildcat.html">Scottish Wildcat</a></li>
+        <li class="bullet"><a href="iriomote.html">Iriomote</a></li>
     </div>
    <div class="foot_item">
         <li><a href="#">Contact Us!</a></li>
-        <li><img src="images/email.png"><img src="images/facebook.png"><img src="images/twitter.png"><img src="images/instagram.png"></li>
-        <!--<li>© CriticalCats 2016</li>-->
+        <li><a href="#"><img src="images/email.png"></a><a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png"></a><a href="https://twitter.com" target="_blank"><img src="images/twitter.png"></a><a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png"></a></li>
    </div>
 </ul>    
 </footer>
