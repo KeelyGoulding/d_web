@@ -93,35 +93,13 @@ $('.slider').each(function(){
 
 //DROPDOWN
 
-$("#species").mouseenter(function(){
-	$("#dropdown").slideDown();
-});
-
-$("#species").mouseleave(function(){
-	$("#dropdown").slideUp();
-});
-
-// $(function () {
-//   $("#species").mouseenter(function () {
-//     $this = $(this);
-//     $this.data("delay", setTimeout( function () {
-//         $this.next("#dropdown").slideDown();
-//       }), 500);
-//     });
-//   $("#species").mouseleave(function () {
-//      $this.next("#dropdown").slideUp();
-//    });
-//   });
+ $("#species").hoverIntent({
+     over: function(){$("#dropdown").slideDown();},
+     out: function(){$("#dropdown").slideUp();},
+ });
 
 
-// $("#species").hoverIntent({
-//     over: function(){$("#dropdown").slideDown();},
-//     out: function(){$("#dropdown").slideUp();},
-// });
-
-
-
-//SPECIES HOVER
+//SPECIES NAV HOVER
 var show = function (e){
   var x = "#";
   x += e.target.id ;
@@ -134,6 +112,5 @@ var hide = function () {
 };
 
 $(".spec_nav").hover(show, hide);
-
 
 });
