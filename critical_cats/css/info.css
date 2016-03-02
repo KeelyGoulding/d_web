@@ -6,7 +6,7 @@
 	 border-radius: 15px;
 	 padding:10px;
 	 text-align:left;
-	 margin:auto;
+	 margin: 10px auto;
  }
 
 .org {
@@ -21,6 +21,19 @@
 	float:left;
 	width:20%;
 	margin:2.5%;
+	text-align:left;
 }
 
+@media screen and (max-width: 850px) {
+.nm_cats {
+	width:40%;	
+	margin: 2% 5%;
+}
+}
+
+@media screen and (max-width: 600px) {
+	.nm_cats{
+	width:90%;
+	
+}
 

@@ -92,3 +92,21 @@ a.slide_btn {
   transition: opacity 0.75s ease-in-out;
   width: 65px;
 }
+
+@media screen and (max-width: 850px) {
+.slide_viewer {
+	height:40vw;
+	
+}
+
+.slide img {
+	width:100%;
+}
+
+.caption {
+	width:98%;
+	left:0;
+}
+
+	
+}
