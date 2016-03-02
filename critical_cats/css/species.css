@@ -148,3 +148,32 @@ footer {
 .spec_info:last-of-type {
 		width:98%;
 	}
+@media screen and (max-width: 600px) {
+	.spec_nav {
+		width:18%;
+		height:9vw;
+		margin: 1% auto;
+		padding:0;
+	}
+	
+	.hover {
+		width:18%;
+		height:9vw;
+	}
+	
+	aside {
+	height:20vw;
+	}
+	
+	footer{
+		top:20vw;
+	}
+	main {
+		top:20vw;
+	}
+	
+	.spec_info {
+		width:98%;
+		height:40vw;
+	}
+}

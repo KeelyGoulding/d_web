@@ -107,6 +107,14 @@ a.slide_btn {
 	width:98%;
 	left:0;
 }
+}
+@media screen and (max-width: 600px) {
+.directional_nav {
+	display:none;
+}
 
+.slider {
+	width:100%;
+}
 	
 }

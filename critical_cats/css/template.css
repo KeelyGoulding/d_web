@@ -208,4 +208,13 @@ footer .foot_item img {
 		height:100%;
 		width:100%;
 	}
+	
+	.foot_item {
+		margin: 2% 4%;
+		width:15%;
+}
+
+main {
+	width:100%;
+	padding:0;
 }
