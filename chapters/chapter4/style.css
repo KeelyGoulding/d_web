@@ -1,4 +1,54 @@
-* {
-	margin:0;
-	padding:0;
+body {
+	width:855px;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding:10%;	
+	margin:auto;
+}
+
+header {
+	border-bottom:medium solid black;
+}
+
+header p {
+	display:inline;
+	position:relative;
+	left:15%;
+}
+
+header h1 {
+	display:inline;
+}
+
+main {
+	margin:2px;
+}
+
+.comment-input {
+	width:33%;
+	float:left;
+}
+
+.comments {
+	width:67%;
+	float:left;
+}
+
+.comments p {
+	border-radius: 5px;
+}
+
+.comments p:nth-child(odd) {
+	background:lavender;
+}
+
+.comments p:nth-child(even) {
+	background:gainsboro;
+}
+
+footer {
+	border-top:medium solid black;
+}
+
+.clearflt {
+	clear:both;
 }
