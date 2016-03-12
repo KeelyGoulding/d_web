@@ -1,18 +1,25 @@
 var main = function (){
 	"use strict";
 	
-	var tabNumber;
-	
-	for(tabNumber =1; tabNumber <= 3; tabNumber++){
-		var tabSelector = ".tabs a:nth-child(" + tabNumber + ") span";
-
-		$(tabSelector).on("click", function (event){
-		$(".tabs span").removeClass("active");
-		$(tabSelector).addClass("active");
-		$("main .content").empty();
+	$(".tabs span").toArray().forEach(function(element) {
+		$(element).on("click", function(){
+			var $element = $(element);
+			
+			$(".tabs span").removeClass("active");
+			$element.addClass("active");
+			$("main .content").empty();
+			
+			if ($element.parent().is(":nth-child(1)")) {
+				console.log("first tab clicked");
+			} else if ($element.parent().is(":nth-child(2)")) {
+				console.log("second tab clicked");
+			} else if ($element.parent().is(":nth-child(3)")) {
+				console.log("third tab clicked");
+			}
+			
+			return false;
 		});
-	}
-	
+	});
 	
 }
 
