@@ -7,7 +7,9 @@ var main = function(){
 		
 		$new_comment.text($comment_text);
 		
+		if ($(".comment-input input").val() !== "") {
 		$(".comments").append($new_comment);
+		}
 	});
 	
 };
