@@ -1,0 +1,14 @@
+[
+{"description":"get groceries",
+	"tags": ["shopping", "chores"]},
+{"description":"make new ToDos",
+	"tags": ["writing", "work"]},
+{"description":"prep for class",
+	"tags": ["work", "teaching"]},
+{"description":"answer emails",
+	"tags": ["work"]},
+{"description":"take Gracie to the park",
+	"tags": ["pets", "chores"]},
+{"description":"finish writing this book",
+	"tags": ["work", "writing"]}
+]

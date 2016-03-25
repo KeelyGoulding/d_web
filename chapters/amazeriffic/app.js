@@ -1,14 +1,11 @@
-var main = function (){
+var main = function (toDoObjects){
 	"use strict";
+
+	var $toDos = toDoObjects.map(function(toDo){
+		return toDo.description;
+	});
 	
-	var $toDos = [
-	"list item one",
-	"list thing 2",
-	"more things to do",
-	"so many things"
-	];
-	
-	
+
 	$(".tabs span").toArray().forEach(function(element) {
 		$(element).on("click", function(){
 			var $element = $(element);
@@ -22,7 +19,7 @@ var main = function (){
 				$content = $("<ul>");
 				var index;
 				
-				for (index = 3; index >= 0; index--){
+				for (index = $toDos.length-1; index >= 0; index--){
 					$content.append($("<li>").text($toDos[index]));
 				}
 
@@ -44,6 +41,10 @@ var main = function (){
 		});
 	});
 	$(".tabs a:first-child span").trigger("click");
-}
+};
 
-$(document).ready(main);
+$(document).ready(function(){
+	$.getJSON("todos.json", function(toDoObjects) {
+		main(toDoObjects);
+	});
+});
