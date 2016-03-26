@@ -95,7 +95,27 @@ var main = function (toDoObjects){
 				
 				
 			} else if ($element.parent().is(":nth-child(4)")) { //tab 4
-				$content = ('<input type="text"><button>+</button>');
+				var $input = $("<input>").addClass("description"),
+					$inputLabel = $("<p>").text("Description: "),
+					$tagInput = $("<input>").addClass("tags"),
+					$tagLabel = $("<p>").text("Tags: "),
+					$button = $("<button>").text("+");
+					
+					$button.on("click", function(){
+						var description = $input.val(),
+							tags = $tagInput.val().split(",");
+					
+					toDoObjects.push({"description":description, "tags":tags});
+					
+					toDos = toDoObjects.map(function(toDo){
+					return toDo.description;
+					});
+					
+					$input.val("");
+					$tagInput.val("");
+					});
+					
+				$content = $("<div>").append($inputLabel).append($input).append($tagLabel).append($tagInput).append($button);
  				$("main .content").append($content);
 				
 			}
