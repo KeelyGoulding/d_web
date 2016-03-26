@@ -4,8 +4,31 @@ var main = function (toDoObjects){
 	var $toDos = toDoObjects.map(function(toDo){
 		return toDo.description;
 	});
-	
 
+//tag-organized list
+	var organizeByTags = function(toDoObjects) {	
+	var tags = [];
+	
+	toDoObjects.forEach(function(toDo) {
+		toDo.tags.forEach(function(tag) {
+			if (tags.indexOf(tag) === -1) {
+				tags.push(tag);
+			}
+		});
+	});
+	var tagObjects = tags.map(function(tag){
+		var toDosWithTag = [];
+		toDoObjects.forEach(function(toDo) {
+			if (toDo.tags.indexOf(tag) !== -1){
+			toDosWithTag.push(toDo.description);
+			}
+		});
+		return{"name": tag, "toDos": toDosWithTag};
+	});
+	//console.log(tagObjects);
+};
+	
+//tabs
 	$(".tabs span").toArray().forEach(function(element) {
 		$(element).on("click", function(){
 			var $element = $(element);
@@ -15,7 +38,7 @@ var main = function (toDoObjects){
 			$element.addClass("active");
 			$("main .content").empty();
 			
-			if ($element.parent().is(":nth-child(1)")) {
+			if ($element.parent().is(":nth-child(1)")) { //tab 1
 				$content = $("<ul>");
 				var index;
 				
@@ -24,7 +47,7 @@ var main = function (toDoObjects){
 				}
 
 				$("main .content").append($content);
-			} else if ($element.parent().is(":nth-child(2)")) {
+			} else if ($element.parent().is(":nth-child(2)")) { //tab 2
 				$content = $("<ul>");
 				$toDos.forEach(function(todo){
 					$content.append($("<li>").text(todo));
@@ -32,34 +55,50 @@ var main = function (toDoObjects){
 				
 				$("main .content").append($content);
 				
-			} else if ($element.parent().is(":nth-child(3)")) {
-				var organizedByTag = [
-					{"name":"shopping", "toDos":["get groceries"]},
-					{"name":"chores", "toDos":["get groceries", "take Gracie to the park"]},
-					{"name":"writing", "todos":["make new toDos", "finish writing this book"]},
-					{"name":"work", "toDos":["make new toDos", "prep for class", "answer emails", "finish writing this book"]},
-					{"name":"teaching", "toDos":["prep for class"]},
-					{"name":"pets", "toDos":["take Gracie to the park"]}
-					];
-					
-					organizedByTag.forEach(function(tag){
-						var $tagName = $("<h3>").text(tag.name);
-						$content = $("<ul>");
-						
-						tag.toDos.forEach(function(description){
-							var $li = $("<li>").text(description);
-							$content.append($li);
-						});
-						$("main .content").append($tagName);
-						$("main .content").append($content);
-					});
+			} else if ($element.parent().is(":nth-child(3)")) { //tab 3
+				//tag-organized list
+				var organizeByTags = function(toDoObjects) {	
+				var tags = [];
 				
-			} else if ($element.parent().is(":nth-child(4)")) {
+					toDoObjects.forEach(function(toDo) {
+							toDo.tags.forEach(function(tag) {
+								if (tags.indexOf(tag) === -1) {
+									tags.push(tag);
+								}
+							});
+					});
+					var tagObjects = tags.map(function(tag){
+						var toDosWithTag = [];
+						toDoObjects.forEach(function(toDo) {
+							if (toDo.tags.indexOf(tag) !== -1){
+							toDosWithTag.push(toDo.description);
+							}
+						});
+						return{"name": tag, "toDos": toDosWithTag};
+							
+						});
+						console.log(tagObjects);
+						
+						/*var $tagName = $("<h3>").text(toDo.name);
+						$content = $("<ul>");
+							
+								toDo.forEach(function(tags){
+								var $li = $("<li>").text(tags);
+								$content.append($li);
+							});
+						organizeByTags(toDoObjects);
+						$("main .content").append($tagName);
+						$("main .content").append($content);*/
+					
+			};
+			
+				
+				
+			} else if ($element.parent().is(":nth-child(4)")) { //tab 4
 				$content = ('<input type="text"><button>+</button>');
  				$("main .content").append($content);
 				
 			}
-			
 			return false;
 		});
 	});
