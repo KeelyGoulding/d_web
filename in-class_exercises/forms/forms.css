@@ -1,0 +1,41 @@
+
+body {
+	font-family: sans-serif;
+	background-color: lightyellow;
+}
+
+div {
+	float:left;
+	margin:5%;
+}
+
+input, textarea {
+	background-color: white;
+	border-radius: 3px;
+	border:none;
+}
+
+input:focus, textarea:focus {
+	border:2px solid black;
+	outline:none;
+}
+
+input[type=text]:focus {
+	background-color: 100; 
+}
+
+input[type=checkbox]{
+	background-color:100;
+	color:yellow;
+	border: none;
+}
+
+button {
+	background-color:50;
+	color:yellow;
+	border:none;
+	padding:2%;
+	border-radius: 5px;
+	display:block;
+	outline:none;
+}

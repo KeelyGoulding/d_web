@@ -1,0 +1,43 @@
+body {
+	background-color: palegreen;
+	font-family:sans-serif;
+}
+
+
+figure {
+	border: 2px solid white;
+	background-color: black;
+	width:310px;
+	padding:5px;
+	color:white;
+
+}
+
+figure img {
+	width:100%;
+}
+
+figcaption {
+	font-style: italic;
+}
+
+.star {
+	width:20px;
+	height: 20px;
+	background: url(images/Gold_Star_off.svg);
+	display: inline-block;
+	position:relative;
+	left:25%;
+}
+
+.star.starOn {
+	background: url(images/Gold_Star.svg);
+}
+
+#form {
+	float:right;
+}
+
+#gallery {
+	clear:both;
+}

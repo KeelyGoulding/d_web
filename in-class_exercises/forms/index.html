@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Form</title>
+	<link href="forms.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+	<div>
+	<h2>Login</h2>
+	<h3>Name:</h3>
+<input type="text" name="name" placeholder="John Smith" required autofocus>
+	<h3>Student ID:</h3>
+<input type="number" name="studentId" required maxlength="9">
+	<h3>Email:</h3>
+<input type="email" name="email" placeholder="john.smith@uleth.ca" required>
+	<h3>Password:</h3>
+<input type="password" name="password" required>
+</div>
+
+<div>
+<h2>Personal Info</h2>
+<h3>Birthday:</h3>
+<input type="date" max="1998-01-01" min="1916-01-01" name="birthday">
+<h3>Favorite Colour:</h3>
+<input type="color" name="faveColor">
+<h3>Photo:</h3>
+<input type="file" accept="image/*" name="photo">
+<h3>Gender:</h3>
+<select>
+	<option>Male</option>
+	<option>Female</option>
+	<option>Other</option>
+</select>
+<h3>Website:</h3>
+<input type="url" autocomplete="off" name="web">
+</div>
+
+<div>
+<h2>Student Info<h2>
+	<h3>School</h3>
+	<input type="text" value="University of Lethbridge" readonly>
+	<h3>Length of Program:</h3>
+	<input type="radio" name="years" value="<2">< 4<br/>
+	<input type="radio" name="years" value="4">4<br/>
+	<input type="radio" name="years" value=">4">> 4<br/>
+
+	<h3>Type of Student:<h3>
+		<input type="checkbox" value="Highschool Admission" name="student">Highschool Admission<br/>
+		<input type="checkbox" value="Transfer" name="student">
+		Transfer<br/>
+		<input type="checkbox" value="Mature/returning" name="student">
+		Mature/returning<br/>
+		<input type="checkbox" value="International" name="student">
+		International<br/>
+	<h3>How would you rate the U of L?</h3>
+	<input type="range" name="rating" min="0" max="10" step="1">
+	<h3>Comments</h3>
+	<textarea cols="40" rows="10" placeholder="Tell us what you think!" name="comments"></textarea>
+		<button id="submit">Submit</button>
+</div>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="js.js" type="text/javascript"></script>
+
+</body>
+</html>
